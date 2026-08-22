@@ -148,7 +148,16 @@
       </header>
 
       <div class="grid grid-3">
-        <button class="card reveal" type="button" data-open="m-hotel">
+        <button class="card reveal" type="button" data-open="m-studio">
+          <div class="card__media"><img src="images/studio-2.jpg" alt="Студия · дизайн интерьера"></div>
+          <div class="card__body">
+            <h3 class="card__title">Studio</h3>
+            <p class="card__meta">Дизайн-проект студии. 3D-визуализации.</p>
+            <span class="link-underline link-underline--sm">Открыть проект</span>
+          </div>
+        </button>
+
+        <button class="card reveal" style="--d:.04s" type="button" data-open="m-hotel">
           <div class="card__media"><img src="images/atrium.jpg" alt="Атриум гостиницы"></div>
           <div class="card__body">
             <h3 class="card__title">Hotel Complex</h3>
@@ -166,7 +175,7 @@
           </div>
         </button>
 
-        <button class="card reveal" style="--d:.16s" type="button" data-open="m-resort">
+        <button class="card reveal" style="--d:.12s" type="button" data-open="m-resort">
           <div class="card__media"><img src="images/resort-1.jpg" alt="Загородный отель"></div>
           <div class="card__body">
             <h3 class="card__title">Country Hotel</h3>
@@ -175,20 +184,11 @@
           </div>
         </button>
 
-        <button class="card reveal" style="--d:.04s" type="button" data-open="m-coworking">
+        <button class="card reveal" style="--d:.16s" type="button" data-open="m-coworking">
           <div class="card__media"><img src="images/coworking-hall.jpg" alt="Коворкинг"></div>
           <div class="card__body">
             <h3 class="card__title">Coworking Space</h3>
             <p class="card__meta">Общественное пространство: workspace и буфет.</p>
-            <span class="link-underline link-underline--sm">Открыть проект</span>
-          </div>
-        </button>
-
-        <button class="card reveal" style="--d:.12s" type="button" data-open="m-pavilion">
-          <div class="card__media"><img src="images/pavilion-hero.png" alt="Павильон"></div>
-          <div class="card__body">
-            <h3 class="card__title">Exhibition pavilion</h3>
-            <p class="card__meta">Выставочный павильон в парковой среде: генплан, планы и фасады.</p>
             <span class="link-underline link-underline--sm">Открыть проект</span>
           </div>
         </button>
@@ -236,7 +236,6 @@
     </button>
     <div class="modal__scroll">
       <header class="modal__head">
-        <p class="eyebrow">Project · 01</p>
         <h2 class="h2">Hotel Complex</h2>
         <p class="modal__lede">Дипломный проект. Многофункциональный гостиничный комплекс: архитектурное решение, интерьеры общественных зон, зимний сад, номерной фонд.</p>
       </header>
@@ -287,7 +286,6 @@
     </button>
     <div class="modal__scroll">
       <header class="modal__head">
-        <p class="eyebrow">Project · 02</p>
         <h2 class="h2">Residence · Прокшино</h2>
         <p class="modal__lede">Квартира 44 м² в ЖК «Прокшино». Полный дизайн-проект: планировка, подбор материалов, визуализация интерьеров.</p>
       </header>
@@ -322,7 +320,6 @@
     </button>
     <div class="modal__scroll">
       <header class="modal__head">
-        <p class="eyebrow">Project · 03</p>
         <h2 class="h2">Country Hotel</h2>
         <p class="modal__lede">Курсовой проект. Загородная гостиница у водоёма: сдержанные объёмы, светлый камень, ритмичный шаг окон, ландшафтная интеграция.</p>
       </header>
@@ -360,7 +357,6 @@
     </button>
     <div class="modal__scroll">
       <header class="modal__head">
-        <p class="eyebrow">Project · 04</p>
         <h2 class="h2">Coworking Space</h2>
         <p class="modal__lede">Общественное пространство: воркинг-зона и корпоративный буфет. Свет, ритм, тёплая палитра.</p>
       </header>
@@ -386,7 +382,7 @@
   </div>
 </div>
 
-<div class="modal" id="m-pavilion" aria-hidden="true" role="dialog" aria-modal="true">
+<div class="modal" id="m-studio" aria-hidden="true" role="dialog" aria-modal="true">
   <div class="modal__backdrop" data-close></div>
   <div class="modal__panel">
     <button class="modal__close" type="button" data-close aria-label="Закрыть">
@@ -394,36 +390,19 @@
     </button>
     <div class="modal__scroll">
       <header class="modal__head">
-        <p class="eyebrow">Project · 05</p>
-        <h2 class="h2">Exhibition pavilion</h2>
-        <p class="modal__lede">Выставочный павильон в парковой среде. Полный комплект: генплан, планировка и фасады.</p>
+        <h2 class="h2">Studio</h2>
+        <p class="modal__lede">Дизайн-проект студии. 3D-визуализации интерьера.</p>
       </header>
 
       <div class="modal__section">
         <p class="gallery__label">Визуализация</p>
-        <div class="gallery__grid gallery__grid--2">
-          <figure class="ph ph--wide"><img src="images/pavilion-hero.png" alt="Общий вид"></figure>
-          <figure class="ph ph--wide"><img src="images/pavilion-facade.png" alt="Фасад"></figure>
+        <div class="gallery__grid gallery__grid--3">
+          <figure class="ph ph--tall"><img src="images/studio-1.jpg" alt="Кухня-столовая"></figure>
+          <figure class="ph ph--tall"><img src="images/studio-2.jpg" alt="Обеденная зона"></figure>
+          <figure class="ph ph--tall"><img src="images/studio-3.jpg" alt="Деталь · шкаф"></figure>
         </div>
       </div>
 
-      <div class="modal__section">
-        <p class="gallery__label">Чертежи</p>
-        <div class="plan-stack">
-          <figure class="plan-doc">
-            <iframe src="plans/pavilion-genplan.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" title="Генплан" loading="lazy" style="--pdf-ratio: 1.414/1"></iframe>
-            <figcaption>Генплан <a href="plans/pavilion-genplan.pdf" target="_blank" rel="noopener">Открыть PDF ↗</a></figcaption>
-          </figure>
-          <figure class="plan-doc">
-            <iframe src="plans/pavilion-floor.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" title="План 1 этажа" loading="lazy" style="--pdf-ratio: 1.414/1"></iframe>
-            <figcaption>План 1 этажа <a href="plans/pavilion-floor.pdf" target="_blank" rel="noopener">Открыть PDF ↗</a></figcaption>
-          </figure>
-          <figure class="plan-doc">
-            <iframe src="plans/pavilion-facades.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" title="Фасады" loading="lazy" style="--pdf-ratio: 1.414/1"></iframe>
-            <figcaption>Фасады западный и восточный <a href="plans/pavilion-facades.pdf" target="_blank" rel="noopener">Открыть PDF ↗</a></figcaption>
-          </figure>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -436,7 +415,6 @@
     </button>
     <div class="modal__scroll">
       <header class="modal__head">
-        <p class="eyebrow">Project · 06</p>
         <h2 class="h2">Sketches</h2>
         <p class="modal__lede">Ручная графика: перспективы, учебные постановки, наброски.</p>
       </header>
