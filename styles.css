@@ -165,7 +165,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   font-weight: 500; font-size: 18px; letter-spacing: .01em;
   line-height: 1.2; margin: 0 0 8px;
 }
-.card__meta { font-size: 13px; color: var(--ink-soft); margin: 0 auto 16px; max-width: 32ch; }
+.card__meta { font-size: 13px; color: var(--ink-soft); margin: 0 auto 16px; max-width: 32ch; min-height: calc(1.6em * 2); }
 
 /* ---- TOOLKIT ---- */
 .toolkit { background: var(--ink); color: var(--bg); }
