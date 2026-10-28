@@ -236,7 +236,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .nav__logo {
   font-size: 15px; font-weight: 400;
   letter-spacing: .18em; color: var(--ink);
-  text-transform: lowercase;
+  
 }
 .nav__menu {
   display: flex; gap: clamp(16px, 2.6vw, 36px);
