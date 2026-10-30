@@ -655,6 +655,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .modal__section { margin-bottom: clamp(36px, 5vw, 56px); }
 .modal__section:last-child { margin-bottom: 0; }
 
+.modal__text {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.modal__text .modal__lede { color: var(--ink-soft); font-size: 15px; line-height: 1.75; margin: 0; }
+
 .gallery__label {
   font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
   color: var(--muted); margin: 0 0 18px; text-align: center;
