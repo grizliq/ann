@@ -320,10 +320,17 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   50%     { transform: translate3d(0, -8px, 0) rotate(-0.5deg); }
 }
 
-.hero__text .display { margin: 6px 0 22px; }
+.hero__text .display { margin: 6px 0 14px; }
+.hero__text .hero__role {
+  font-size: 14px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--ink-soft); font-weight: 400;
+  margin: 0 0 26px;
+}
 .hero__text .lede {
   color: var(--ink-soft);
   font-size: 15px; margin: 0 0 30px; line-height: 1.8;
+  max-width: 44ch;
+  text-wrap: pretty;
 }
 
 /* ---- CARDS ---- */
@@ -656,11 +663,18 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .modal__section:last-child { margin-bottom: 0; }
 
 .modal__text {
-  max-width: 720px;
+  max-width: 680px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
-.modal__text .modal__lede { color: var(--ink-soft); font-size: 15px; line-height: 1.75; margin: 0; }
+.modal__text .modal__lede {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 0;
+  text-wrap: pretty;
+  hyphens: none;
+}
 
 .gallery__label {
   font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
