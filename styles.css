@@ -294,30 +294,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   position: relative;
   aspect-ratio: 4/5;
   overflow: hidden;
-  display: flex; align-items: flex-end; justify-content: center;
+  background: var(--cream);
 }
-.portrait__wash {
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, var(--cream) 0%, #e2d9c6 100%);
-  z-index: 0;
-}
+.portrait__wash { display: none; }
 .portrait__img {
-  position: relative; z-index: 1;
-  height: 112%;
-  width: auto;
-  filter: drop-shadow(0 22px 40px rgba(30,25,20,.16));
-  transform-origin: 50% 90%;
-  animation: portraitFloat 6s ease-in-out infinite;
-  transition: filter .5s var(--ease);
-  will-change: transform;
-}
-.hero__portrait:hover .portrait__img {
-  animation-duration: 3s;
-  filter: drop-shadow(0 28px 50px rgba(30,25,20,.24));
-}
-@keyframes portraitFloat {
-  0%,100% { transform: translate3d(0, 0, 0) rotate(0deg); }
-  50%     { transform: translate3d(0, -8px, 0) rotate(-0.5deg); }
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
 }
 
 .hero__text .display { margin: 6px 0 14px; }
