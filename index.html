@@ -9,15 +9,17 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2">
 <link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="images/ann.webp" fetchpriority="high">
+<link rel="preload" as="image" href="images/current-4.webp">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
       media="print" onload="this.media='all'">
 <noscript>
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap">
 </noscript>
 </head>
 <body>
@@ -38,7 +40,7 @@
     <div class="hero__grid">
       <div class="hero__portrait">
         <div class="portrait__wash" aria-hidden="true"></div>
-        <img src="images/ann.webp" alt="Портрет Анны Таракановой" class="portrait__img">
+        <img src="images/ann.webp" alt="Портрет Анны Таракановой" class="portrait__img" fetchpriority="high" decoding="async">
       </div>
 
       <div class="hero__text reveal">
@@ -152,7 +154,7 @@
 
       <button class="card card--featured reveal" type="button" data-open="m-current">
         <div class="card__media card__media--wide">
-          <img decoding="async" loading="lazy" src="images/current-4.webp" alt="Текущий проект" style="object-position: 50% 55%;">
+          <img decoding="async" src="images/current-4.webp" alt="Текущий проект" fetchpriority="high" style="object-position: 50% 55%;">
           <span class="card__badge">В работе · 2026</span>
         </div>
         <div class="card__body card__body--featured">
