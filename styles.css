@@ -415,7 +415,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   margin: 0; max-width: 48ch; min-height: 0;
   text-align: left;
 }
-.card__body--featured .link-underline { white-space: nowrap; }
+.card__body--featured .link-underline {
+  white-space: nowrap;
+  padding: 16px 38px;
+  font-size: 11px;
+  letter-spacing: .32em;
+}
 @media (max-width: 640px) {
   .card__body--featured {
     grid-template-columns: 1fr;
