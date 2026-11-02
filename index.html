@@ -150,6 +150,18 @@
         <h2 class="h2">Проекты</h2>
       </header>
 
+      <button class="card card--featured reveal" type="button" data-open="m-current">
+        <div class="card__media card__media--wide">
+          <img decoding="async" loading="lazy" src="images/current-4.webp" alt="Текущий проект" style="object-position: 50% 55%;">
+          <span class="card__badge">В работе · 2026</span>
+        </div>
+        <div class="card__body card__body--featured">
+          <h3 class="card__title">Квартира · текущий проект</h3>
+          <p class="card__meta">Жилой интерьер в тёплой палитре: ореховое дерево, латунные детали, лепнина.</p>
+          <span class="link-underline link-underline--sm">Открыть проект</span>
+        </div>
+      </button>
+
       <div class="grid grid-3">
         <button class="card reveal" type="button" data-open="m-coworking">
           <div class="card__media"><img decoding="async" loading="lazy" src="images/coworking-hall.webp" alt="Коворкинг"></div>
@@ -233,6 +245,39 @@
 </footer>
 
 <!-- ==================== MODALS ==================== -->
+
+<div class="modal" id="m-current" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel">
+    <button class="modal__close" type="button" data-close aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+    </button>
+    <div class="modal__scroll">
+      <header class="modal__head">
+        <p class="eyebrow">В работе · 2026 · Жилой интерьер</p>
+        <h2 class="h2">Квартира · текущий проект</h2>
+      </header>
+
+      <div class="modal__section">
+        <p class="gallery__label">Визуализация</p>
+        <div class="gallery__grid gallery__grid--2">
+          <figure class="ph ph--wide"><img decoding="async" loading="lazy" src="images/current-4.webp" alt="Гостиная"></figure>
+          <figure class="ph ph--wide"><img decoding="async" loading="lazy" src="images/current-1.webp" alt="Гостиная-кухня"></figure>
+          <figure class="ph ph--wide"><img decoding="async" loading="lazy" src="images/current-5.webp" alt="Кухня-столовая"></figure>
+          <figure class="ph ph--wide"><img decoding="async" loading="lazy" src="images/current-3.webp" alt="Прихожая"></figure>
+        </div>
+      </div>
+
+      <div class="modal__section">
+        <p class="gallery__label">Деталь</p>
+        <div class="gallery__grid gallery__grid--1">
+          <figure class="ph ph--wide"><img decoding="async" loading="lazy" src="images/current-2.webp" alt="Прихожая · входная зона"></figure>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <div class="modal" id="m-hotel" aria-hidden="true" role="dialog" aria-modal="true">
   <div class="modal__backdrop" data-close></div>
