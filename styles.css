@@ -378,7 +378,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   position: relative;
 }
 @media (max-width: 720px) {
-  .card--featured .card__media--wide { aspect-ratio: 4/3; }
+  .card--featured .card__media--wide { aspect-ratio: 4/5; }
+  .card--featured { margin-bottom: 36px; }
 }
 .card__badge {
   position: absolute;
@@ -424,11 +425,22 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @media (max-width: 640px) {
   .card__body--featured {
     grid-template-columns: 1fr;
-    gap: 16px;
-    padding-top: 18px;
+    gap: 18px;
+    padding-top: 20px;
   }
-  .card__body--featured .link-underline { justify-self: start; }
-  .card__body--featured .card__title { font-size: 19px; }
+  .card__body--featured .link-underline {
+    justify-self: start;
+    padding: 13px 28px;
+    font-size: 10px;
+    letter-spacing: .3em;
+  }
+  .card__body--featured .card__title { font-size: 20px; margin-bottom: 10px; }
+  .card__body--featured .card__meta { font-size: 14px; line-height: 1.6; }
+  .card__badge {
+    top: 12px; left: 12px;
+    font-size: 9px; letter-spacing: .22em;
+    padding: 7px 12px;
+  }
 }
 
 /* ---- TOOLKIT ---- */
