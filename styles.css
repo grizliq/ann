@@ -686,7 +686,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .modal__panel {
     border-radius: 16px 16px 0 0;
     width: 100vw;
-    max-height: 100vh;
+    height: 92vh;
+    max-height: 92vh;
     inset: auto 0 0 0;
     margin: 0;
     transform: translateY(32px);
@@ -752,8 +753,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .gallery__label { margin-bottom: 14px; font-size: 9px; }
   .plan-doc { padding: 6px; }
   .modal__close {
-    top: 10px; right: 10px;
-    width: 38px; height: 38px;
+    position: fixed;
+    top: calc(8vh + 12px);
+    right: 14px;
+    width: 44px; height: 44px;
+    z-index: 110;
   }
 }
 
@@ -791,12 +795,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ph--tall { aspect-ratio: 3/4; }
 .ph--wide { aspect-ratio: 16/9; }
 
-/* Paper sheet (hand drawings) — preserve full sheet, no cropping */
+/* Paper sheet (hand drawings) — preserve full sheet, no cropping, no frame */
 .ph--sheet {
   aspect-ratio: 3/4;
-  background: #fbfaf7;
-  border: 1px solid var(--hairline);
-  padding: 10px;
+  background: transparent;
 }
 .ph--sheet img { object-fit: contain; }
 
